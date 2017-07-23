@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageKey. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="adminhtml_store_edit_form_prepare_form">
+        <observer name="magekey_storesflags_store_edit_form" instance="MageKey\StoresFlags\Observer\PrepareStoreForm" />
+    </event>
+</config>

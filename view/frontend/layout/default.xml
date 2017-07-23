@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageKey. All rights reserved.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock class="MageKey\StoresFlags\Block\Store\Switcher" name="store_language">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">MageKey_StoresFlags::switch/languages.phtml</argument>
+            </action>
+        </referenceBlock>
+    </body>
+</page>
