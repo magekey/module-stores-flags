@@ -10,6 +10,20 @@ Adds country flags to Store View.
 ## Installing the Extension
 
     composer require magekey/module-stores-flags
+    
+## Use compiled styles
+
+You can use compiled css in your theme
+
+put this code in **app/design/frontend/YourPackage/YourTheme/MageKey_StoresFlags/layout/default.xml**
+```
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="MageKey_StoresFlags::css/styles.css"/>
+    </head>
+</page>
+```
 
 ## Deployment
 
