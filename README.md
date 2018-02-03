@@ -21,4 +21,4 @@ Adds country flags to Store View.
     php bin/magento maintenance:disable                 #Disable maintenance mode
 
 ## Versions tested
-> 2.1.7
+> 2.2.2
