@@ -28,8 +28,11 @@ $_storeHelper = $this->helper(\MageKey\StoresFlags\Helper\Store::class);
             data-target="dropdown">
             <?php foreach ($block->getStores() as $_lang): ?>
                 <?php if ($_lang->getId() != $block->getCurrentStoreId()): ?>
-                    <li class="view-<?= $block->escapeHtml($_lang->getCode()) ?> switcher-option">
+                    <li class="view-<?= $block->escapeHtml($_lang->getCode()) ?> switcher-option<?= /* @noEscape */ ($_lang->getFlag() ? ' has-flag' : '') ?>">
                         <a href="#" data-post='<?= /* @noEscape */ $block->getTargetStorePostData($_lang) ?>'>
+                            <?php if ($_lang->getFlag()): ?>
+                                <span class="flag-icon flag-icon-<?= /* @noEscape */ $_lang->getFlag() ?>"></span>
+                            <?php endif; ?>
                             <?= $block->escapeHtml($_lang->getName()) ?>
                         </a>
                     </li>
