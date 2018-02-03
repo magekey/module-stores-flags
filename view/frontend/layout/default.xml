@@ -9,7 +9,7 @@
         <css src="MageKey_StoresFlags::css/styles.css"/>
     </head-->
     <body>
-        <referenceBlock class="MageKey\StoresFlags\Block\Store\Switcher" name="store_language">
+        <referenceBlock name="store_language">
             <action method="setTemplate">
                 <argument name="template" xsi:type="string">MageKey_StoresFlags::switch/languages.phtml</argument>
             </action>
