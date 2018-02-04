@@ -1,5 +1,7 @@
 # Magento 2 Stores Flags
 
+[![Packagist](https://img.shields.io/packagist/v/magekey/module-stores-flags.svg)](https://packagist.org/packages/magekey/module-stores-flags) [![Packagist](https://img.shields.io/packagist/dt/magekey/module-stores-flags.svg)](https://packagist.org/packages/magekey/module-stores-flags)
+
 Adds country flags to Store View.
 
 ![alt text](https://raw.githubusercontent.com/magekey/module-stores-flags/master/docs/images/preview.png)
