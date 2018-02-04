@@ -2,6 +2,8 @@
 
 Adds country flags to Store View.
 
+![alt text](https://raw.githubusercontent.com/magekey/module-stores-flags/master/docs/images/preview.png)
+
 ## Features:
 
 - Store Flag section under  **Stores** > **All Stores** > [Select Store View] > **Store View Flag** section
