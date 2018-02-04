@@ -3,7 +3,7 @@
     "description": "MageKey Stores Flags",
     "type": "magento2-module",
     "license": "MIT",
-    "version": "2.1.3",
+    "version": "2.1.4",
     "authors": [
         {
             "name": "Nicholas Miller",
