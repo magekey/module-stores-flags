@@ -4,7 +4,7 @@
  */
 
 /** @var \Magento\Store\Block\Switcher $block */
-$_storeHelper = $this->helper(\MageKey\StoresFlags\Helper\Store::class);
+$_dataHelper = $this->helper(\MageKey\StoresFlags\Helper\Data::class);
 ?>
 <?php if (count($block->getStores())>1): ?>
 <?php $id = $block->getIdModifier() ? '-' . $block->getIdModifier() : '' ?>
@@ -17,7 +17,7 @@ $_storeHelper = $this->helper(\MageKey\StoresFlags\Helper\Store::class);
              data-toggle="dropdown"
              data-trigger-keypress-button="true">
             <strong class="view-<?= $block->escapeHtml($block->getCurrentStoreCode()) ?>">
-                <?php if ($currentFlag = $_storeHelper->getCurrentFlag()): ?>
+                <?php if ($currentFlag = $_dataHelper->getCurrentFlag()): ?>
                 <span class="flag-icon flag-icon-<?= /* @noEscape */ $currentFlag ?>"></span>
                 <?php else: ?>
                 <span><?= $block->escapeHtml($block->getStoreName()) ?></span>

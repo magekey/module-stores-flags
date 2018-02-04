@@ -6,24 +6,12 @@ Adds country flags to Store View.
 
 - Store Flag section under  **Stores** > **All Stores** > [Select Store View] > **Store View Flag** section
 - new "choose store" template on frontend.
+- ability to enable/disable store flags in admin settings
+- ability to enable/disable compiled styles in admin settings
 
 ## Installing the Extension
 
     composer require magekey/module-stores-flags
-    
-## Use compiled styles
-
-You can use compiled css in your theme
-
-put this code in **app/design/frontend/YourPackage/YourTheme/MageKey_StoresFlags/layout/default.xml**
-```
-<?xml version="1.0"?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <head>
-        <css src="MageKey_StoresFlags::css/styles.css"/>
-    </head>
-</page>
-```
 
 ## Deployment
 

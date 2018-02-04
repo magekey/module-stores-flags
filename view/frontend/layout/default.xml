@@ -5,12 +5,12 @@
  */
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <!--head>
-        <css src="MageKey_StoresFlags::css/styles.css"/>
-    </head-->
     <body>
+        <referenceBlock name="head.additional">
+            <block class="MageKey\StoresFlags\Block\CompiledStyles" name="mgk.storesflags.compiled_styles" ifconfig="mgk_storesflags/general/compiled_styles"/>
+        </referenceBlock>
         <referenceBlock name="store_language">
-            <action method="setTemplate">
+            <action method="setTemplate" ifconfig="mgk_storesflags/general/enabled">
                 <argument name="template" xsi:type="string">MageKey_StoresFlags::switch/languages.phtml</argument>
             </action>
         </referenceBlock>
