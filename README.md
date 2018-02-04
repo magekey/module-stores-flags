@@ -26,3 +26,4 @@ Adds country flags to Store View.
 
 ## Versions tested
 > 2.2.2
+> 2.1.11
