@@ -22,6 +22,19 @@ class Flags implements \Magento\Framework\Option\ArrayInterface
     }
 
     /**
+     * Find store flag
+     *
+     * @param string $flag
+     * @return string
+     */
+    public function findFlag($flag)
+    {
+        $flag = strtoupper($flag);
+        $flags = $this->toArray();
+        return isset($flags[$flag]) ? $flags[$flag] : '';
+    }
+
+    /**
      * Return array of options
      *
      * @return array

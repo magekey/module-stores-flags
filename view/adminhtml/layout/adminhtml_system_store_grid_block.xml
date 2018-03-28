@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageKey. All rights reserved.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="adminhtml.system.store.grid.columnSet">
+            <block class="Magento\Backend\Block\Widget\Grid\Column" name="adminhtml.system.store.grid.columnSet.store_flag" as="store_flag" after="-">
+                <arguments>
+                    <argument name="header" xsi:type="string" translate="true">Store Flag</argument>
+                    <argument name="align" xsi:type="string">center</argument>
+                    <argument name="index" xsi:type="string">store_flag</argument>
+                    <argument name="filter" xsi:type="boolean">false</argument>
+                    <argument name="sortable" xsi:type="boolean">false</argument>
+                    <argument name="renderer" xsi:type="string">MageKey\StoresFlags\Block\Backend\Grid\Render\StoreFlag</argument>
+                 </arguments>
+             </block>
+        </referenceBlock>
+    </body>
+</page>
