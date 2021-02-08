@@ -3,21 +3,17 @@
 //  * See LICENSE.txt for license details.
 //  */
 
-.setMageKeyLogo(@module; @position) {
-    background-image: url('../@{module}/images/logo-menu.png');
-    background-repeat: no-repeat;
-    background-position: @position;
-}
-
-.admin__page-nav-item,
-.admin__page-nav-item._active {
-    &.mgk-storesflags {
-        .admin__page-nav-link,
-        .admin__page-nav-link:hover {
-            .setMageKeyLogo(
-                'MageKey_StoresFlags',
-                right 2rem center
-            );
+.admin__page-nav.magekey,
+.admin__page-nav.magekey:hover,
+.admin__page-nav.magekey._collapsed._show {
+    .admin__page-nav-title {
+        background-image: url('../MageKey_StoresFlags/images/logo.svg');
+        background-repeat: no-repeat;
+        background-position: left 1rem center;
+        background-size: 25px 25px;
+        
+        strong {
+            margin-left: 3rem;
         }
     }
 }
